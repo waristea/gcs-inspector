@@ -1,18 +1,18 @@
 # GCS Inspector
 GCS Inspector is a simple library that checks for public storage and objects attached to a Google Service Account
 
-#Notable features
+## Notable features
   - Slack Integration
   - Parseable output
   - Update detection
 
-# Requirements
+## Requirements
 1. Google Service Account file
 2. Python 3.8
 3. Pip
 
-# Usage
-## Manual - Using Github Repo
+## Usage
+#### Manual - Using Github Repo
     1. Clone this repo
     2. Create a Google service account for your project and download the json authentication file (it should look like: `projectname.json`)
     3. Create a virtual environment
@@ -23,7 +23,7 @@ GCS Inspector is a simple library that checks for public storage and objects att
         `python3.8 -m gcs-inspector projectname.json`
     6. (Optional) Set up a cronjob for regular monitoring
 
-## Using Pip
+#### Using Pip
     1. Create a Google service account for your project and download the json authentication file (it should look like: `projectname.json`)
     2. Install the library
         `pip install gcs-inspector`
@@ -31,7 +31,7 @@ GCS Inspector is a simple library that checks for public storage and objects att
         `gcs-inspector projectname.json`
     4. (Optional) Set up a cronjob for regular monitoring
 
-# Options
+## Options
     -h, --help            show this help message and exit
     -s, --skip_object     skip object-level checking (so only bucket-level are checked)
     -x, --silent          disable writing to screen (except errors)
@@ -48,4 +48,4 @@ GCS Inspector is a simple library that checks for public storage and objects att
                             2: Only get difference from previous state (display mode 1)
 
 # Contributing and Issues
-Feel free to contribute and file issues to this project.
+Contributions to this project will be much appreciated :)
