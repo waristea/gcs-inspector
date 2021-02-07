@@ -23,7 +23,7 @@ GCS Inspector is a simple library that checks for public storage and objects att
         `python3.8 -m gcs-inspector projectname.json`
     6. (Optional) Set up a cronjob for regular monitoring
 
-#### Using Pip
+#### Using Pip (In progress)
     1. Create a Google service account for your project and download the json authentication file (it should look like: `projectname.json`)
     2. Install the library
         `pip install gcs-inspector`
@@ -47,5 +47,9 @@ GCS Inspector is a simple library that checks for public storage and objects att
                             1: Slack-formatted
                             2: Only get difference from previous state (display mode 1)
 
-# Contributing and Issues
+## Contributing and Issues
 Contributions to this project will be much appreciated :)
+
+#### How to Contribute
+The entrypoint of the code is in `gcs_inspector/__main__.py`. 
+Besides there, the bulk of the code is mainly in `gcs_inspector/bucket_processor.py`.
