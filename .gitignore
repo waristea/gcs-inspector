@@ -1,0 +1,6 @@
+/__pycache__/
+/venv/*
+*.json
+/outputs/*
+.DS_Store
+/gcs-inspector/*.pyc
